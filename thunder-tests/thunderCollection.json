@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "0b80e9bc-7478-4f39-acc1-83987d52ae17",
+    "colName": "mt4-server-api",
+    "created": "2022-02-07T09:53:59.117Z",
+    "sortNum": 10000,
+    "folders": []
+  },
+  {
+    "_id": "28d729c9-b7a0-4868-9361-f367512d14bb",
+    "colName": "mt4-terminal-api",
+    "created": "2022-09-05T10:43:09.863Z",
+    "sortNum": 20000,
+    "folders": []
+  }
+]

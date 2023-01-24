@@ -1,0 +1,223 @@
+[
+  {
+    "_id": "ed0ca335-c9d2-49e1-8a6c-fbc871a3e045",
+    "colId": "0b80e9bc-7478-4f39-acc1-83987d52ae17",
+    "containerId": "",
+    "name": "connect",
+    "url": "http://172.17.237.161:9000/terminal/connect",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2022-02-02T15:14:17.653Z",
+    "modified": "2022-02-07T21:17:14.662Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \n    \"Login\": 14744755,\n    \"Password\": \"x8svpzx\",\n    \"Host\": \"141.95.36.224\",\n    \"Port\": 443\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "80fe2e16-f767-400e-8dc6-03e6dc677f1b",
+    "colId": "0b80e9bc-7478-4f39-acc1-83987d52ae17",
+    "containerId": "",
+    "name": "brokersearch",
+    "url": "http://172.17.237.161:9000/terminal/brokersearch",
+    "method": "POST",
+    "sortNum": 70000,
+    "created": "2022-02-02T15:29:23.007Z",
+    "modified": "2022-02-07T21:17:32.591Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"Broker\": \"Alpari-Demo\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "4fcf755d-8d43-4122-9d9e-8068229729bc",
+    "colId": "0b80e9bc-7478-4f39-acc1-83987d52ae17",
+    "containerId": "",
+    "name": "balance",
+    "url": "http://172.17.237.161:9000/terminal/balance",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-02-07T09:55:30.428Z",
+    "modified": "2022-02-07T09:55:50.134Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"ChannelName\": \"14744755@141.95.36.224:443\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "43e36d98-a32c-4611-9855-d363525291ab",
+    "colId": "0b80e9bc-7478-4f39-acc1-83987d52ae17",
+    "containerId": "",
+    "name": "orderhistory",
+    "url": "http://172.17.237.161:9000/terminal/orderhistory",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-02-07T09:56:11.815Z",
+    "modified": "2022-02-07T09:56:32.005Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"ChannelName\": \"14744755@141.95.36.224:443\",\n    \"Offset\": 0,\n    \"Days\": 10\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b7f8d1dc-72c8-45cb-a0f9-681dfd71e434",
+    "colId": "0b80e9bc-7478-4f39-acc1-83987d52ae17",
+    "containerId": "",
+    "name": "openorders",
+    "url": "http://172.17.237.161:9000/terminal/openorders",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-02-07T09:56:52.793Z",
+    "modified": "2022-02-07T09:57:13.750Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"ChannelName\": \"14744755@141.95.36.224:443\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "556090e6-b924-40c9-b035-7e3b133de8f5",
+    "colId": "0b80e9bc-7478-4f39-acc1-83987d52ae17",
+    "containerId": "",
+    "name": "equity",
+    "url": "http://172.17.237.161:9000/terminal/equity",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2022-02-07T09:57:48.940Z",
+    "modified": "2022-02-07T09:58:10.439Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"ChannelName\": \"14744755@141.95.36.224:443\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e2828ce6-3b8c-4458-ae62-f608097abc88",
+    "colId": "0b80e9bc-7478-4f39-acc1-83987d52ae17",
+    "containerId": "",
+    "name": "symbols",
+    "url": "http://172.17.237.161:9000/terminal/symbols",
+    "method": "POST",
+    "sortNum": 80000,
+    "created": "2022-02-09T13:35:00.592Z",
+    "modified": "2022-02-09T13:35:24.351Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"ChannelName\": \"14744755@141.95.36.224:443\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "1e1bc4de-e499-4e42-9dd5-3063250c44ef",
+    "colId": "28d729c9-b7a0-4868-9361-f367512d14bb",
+    "containerId": "",
+    "name": "broker-search",
+    "url": "http://terminal-api.dev4traders.com:9000/terminal/broker-search",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-09-05T10:43:33.170Z",
+    "modified": "2022-09-05T15:09:49.760Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"Broker\":\"Alpari-Demo\"}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "431bded4-ff99-49a0-ae53-d9ce3b19345f",
+    "colId": "28d729c9-b7a0-4868-9361-f367512d14bb",
+    "containerId": "",
+    "name": "account-create",
+    "url": "http://185.252.221.250:9000/terminal/account-create",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-09-05T10:44:18.610Z",
+    "modified": "2022-12-26T19:08:34.737Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"Host\":\"3.114.86.50\",\"Port\":443,\"Name\":\"testM\",\"Email\":\"test1@tst.com\",\"Balance\":100000,\"leverage\":100,\"AccountType\":\"demoforex\",\"TerminalCompany\":\"EightcapLtd-Demo3\",\"Country\":\"Ru\",\"City\":\"1\",\"State\":\"1\",\"Zip\":\"1\",\"Address\":\"1\",\"Phone\":\"1\"}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "bec89f93-7927-4dfb-a618-e36927b22e06",
+    "colId": "28d729c9-b7a0-4868-9361-f367512d14bb",
+    "containerId": "",
+    "name": "srv-parse",
+    "url": "http://172.17.136.209:9000/terminal/srv-parse",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2022-09-05T12:06:12.683Z",
+    "modified": "2022-09-05T14:20:41.969Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [],
+      "files": [
+        {
+          "name": "q",
+          "value": "D:\\in\\Robert\\TPGlobal-Live.srv"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "7c437a03-4392-42cc-be55-2416e0002354",
+    "colId": "28d729c9-b7a0-4868-9361-f367512d14bb",
+    "containerId": "",
+    "name": "dat-parse",
+    "url": "http://terminal-api.dev4traders.com:9000/terminal/dat-parse",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2022-09-30T08:10:16.228Z",
+    "modified": "2022-09-30T08:11:36.196Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [],
+      "files": [
+        {
+          "name": "q",
+          "value": "D:\\dev\\MT4TerminalApi\\MT4TerminalApi.RestApiLite\\bin\\Release\\servers.dat"
+        }
+      ]
+    },
+    "tests": []
+  }
+]

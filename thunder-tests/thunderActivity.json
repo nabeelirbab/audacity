@@ -1,0 +1,168 @@
+[
+  {
+    "_id": "67d20ad0-f16c-4419-a79c-ecff36d6ff01",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://192.168.243.209:9000/terminal/connect",
+    "url": "http://172.17.237.161:9000/terminal/connect",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-02-02T15:14:17.653Z",
+    "modified": "2022-02-09T13:27:51.301Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \n    \"Login\": 14744755,\n    \"Password\": \"x8svpzx\",\n    \"Host\": \"141.95.36.224\",\n    \"Port\": 443\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "415cef18-511f-4342-b6b9-ab7b08510491",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://192.168.243.209:9000/terminal/brokersearch",
+    "url": "http://172.17.237.161:9000/terminal/brokersearch",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-02-02T15:29:23.007Z",
+    "modified": "2022-02-09T11:48:14.061Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"Broker\": \"Alpari-Demo\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7421bcbe-1107-4a45-97a3-d2db3750e21c",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://172.17.237.161:9000/terminal/openorders",
+    "url": "http://172.17.237.161:9000/terminal/openorders",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-02-07T09:48:39.363Z",
+    "modified": "2022-02-07T09:50:28.605Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"ChannelName\": \"14744755@141.95.36.224:443\",\n    \"Offset\": 0,\n    \"Days\": 0\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2b5d58ae-e5de-4528-80bb-7034d9111eb4",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://172.17.237.161:9000/terminal/orderhistory",
+    "url": "http://172.17.237.161:9000/terminal/orderhistory",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-02-07T09:50:59.199Z",
+    "modified": "2022-02-07T09:51:44.502Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"ChannelName\": \"14744755@141.95.36.224:443\",\n    \"Offset\": 0,\n    \"Days\": 10\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "735a828b-29d3-4d3b-b4c6-a218d4a525af",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://172.17.237.161:9000/terminal/balance",
+    "url": "http://172.17.237.161:9000/terminal/balance",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-02-07T09:53:23.147Z",
+    "modified": "2022-02-09T12:50:37.607Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"ChannelName\": \"14744755@141.95.36.224:443\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "bc14f445-177b-4854-b5d6-ac058723a959",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://b.mtapi.su:9000/mt4",
+    "url": "http://b.mtapi.su:9000/mt4",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-09-05T12:28:45.702Z",
+    "modified": "2022-09-05T12:30:26.783Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "binary",
+      "raw": "",
+      "form": [],
+      "binary": "D:\\in\\Robert\\TPGlobal-Live.srv"
+    },
+    "tests": []
+  },
+  {
+    "_id": "32863ed0-13c6-4989-9b9a-c07813482222",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://ws.mt5crm.com/monitor/server.php",
+    "url": "http://ws.mt5crm.com/monitor/server.php",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-01-09T19:03:50.005Z",
+    "modified": "2023-01-09T19:10:33.373Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "testq",
+        "value": "1",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "test",
+          "value": "9"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "09f6dea5-3c0d-445a-aa8a-cccefcf10a4a",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://ws.mt5crm.com/monitor/server.php?testq=1",
+    "url": "http://ws.mt5crm.com/monitor/server.php?testq=1",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-01-09T19:10:16.512Z",
+    "modified": "2023-01-09T19:10:16.512Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "testq",
+        "value": "1",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  }
+]

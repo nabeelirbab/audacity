@@ -1,0 +1,145 @@
+{
+    "name": "mikha-dev/funded",
+    "description": "Prop Firm Management Panel.",
+    "keywords": [
+        "prop",
+        "forex",
+        "laravel",
+        "metatrader"
+    ],
+    "version": "4.0",
+    "license": "Commerce",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/laravel-config-writer.git",
+            "canonical": false
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/dcat-admin.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/dcat-form-media.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/dcat-site-config.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/dcat-operation-log.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/dcat-translation-loader.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/apilogger.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/laravel-authentication-log.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/laravel-server-monitor.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/jwt-auth.git",
+            "canonical": false
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/mikha-dev/laravel-device-tracking.git",
+            "canonical": false
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "appstract/laravel-opcache": "^4.0.2",
+        "creativeorange/gravatar": "^1.0",
+        "danielme85/laravel-log-to-db": "^3.0",
+        "darkaonline/l5-swagger": "^8.4",
+        "dcat/easy-excel": "^1.0",
+        "deployer/deployer": "^7.0",
+        "dev4traders/mt4-sdk-php": "^1.0",
+        "geoip2/geoip2": "^2.11",
+        "google/recaptcha": "^1.2",
+        "grkamil/laravel-telegram-logging": "^1.7",
+        "jenssegers/agent": "^2.6",
+        "kub-at/php-simple-html-dom-parser": "^1.9",
+        "laravel-notification-channels/telegram": "^2.1.0",
+        "laravel/framework": "~9.0",
+        "laravel/horizon": "^5.9",
+        "laravel/sanctum": "^2.14",
+        "laravel/socialite": "^5.2",
+        "laravel/telescope": "^4.7",
+        "laravel/tinker": "^2.6",
+        "masbug/flysystem-google-drive-ext": "^2.2",
+        "mikha-dev/laravel-config-writer": "dev-main",
+        "mikha-dev/apilogger": "dev-master",
+        "mikha-dev/dcat-admin": "dev-main",
+        "mikha-dev/dcat-form-media": "dev-main",
+        "mikha-dev/dcat-operation-log": "dev-main",
+        "mikha-dev/dcat-site-config": "dev-main",
+        "mikha-dev/dcat-translation-loader": "dev-main",
+        "mikha-dev/laravel-authentication-log": "dev-main",
+        "mikha-dev/laravel-server-monitor": "dev-main",
+        "nesbot/carbon": "^2.61",
+        "predis/predis": "^1.1",
+        "pusher/pusher-php-server": "^7.0",
+        "revolution/socialite-wordpress": "dev-master",
+        "spatie/laravel-database-mail-templates": "^3.4",
+        "staudenmeir/eloquent-has-many-deep": "^1.14",
+        "textalk/websocket": "^1.5",
+        "torann/geoip": "^3.0.4",
+        "tymon/jwt-auth": "dev-develop"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "process-timeout":0
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.12",
+        "bennett-treptow/laravel-migration-generator": "^4.3",
+        "dietercoopman/laravel-showsql": "^1.1",
+        "nunomaduro/larastan": "^2.0"
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+                "barryvdh/laravel-ide-helper"
+            ]
+        }
+    }
+}

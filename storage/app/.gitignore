@@ -1,0 +1,4 @@
+*
+!geoip/
+!public/
+!.gitignore
