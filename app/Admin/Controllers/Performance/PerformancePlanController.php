@@ -43,16 +43,29 @@ class PerformancePlanController extends AdminController
     protected function grid()
     {
         return new Grid( new PerformancePlan(), function (Grid $grid) {
-
             $fmt = function ($val)
             {
                 return $val.'%';
             };
+
+           $broker_id = function($broker_id) {
+                return $broker_id;
+            };
+            // dd($broker_id);
             $grid->model()->whereManagerId(Admin::user()->id);
 
             $grid->id();
  //           $grid->column('key');
+            // $name =  UserBrokerServer
+            //     ::with('broker_server')
+            //     ->enabled()->where('id',$grid->broker_id())
+            //     ->whereHas('broker_server', static function ($server) {
+            //         $server->api();
+            //     })
+            //     ->whereUserId(User::GetManagerId())->first();
+            //     dd($name->broker_server->name);
             $grid->column('title');
+            $grid->column('broker_id')->display($broker_id);
 
             $grid->column('initial_balance')->price();
 
@@ -94,19 +107,19 @@ class PerformancePlanController extends AdminController
             $form->text('key')->required();
             $form->text('title')->required();
 
-            // $options  = UserBrokerServer
-            //     ::with('broker_server')
-            //     ->enabled()
-            //     ->whereHas('broker_server', static function ($server) {
-            //         $server->api();
-            //     })
-            //     ->whereUserId(User::GetManagerId())->get();
-            // $arr = array();
-            // foreach ($options as $option) {
-            //     $arr[$option->id] = $option->broker_server->name;
-            // }
+            $options  = UserBrokerServer
+                ::with('broker_server')
+                ->enabled()
+                ->whereHas('broker_server', static function ($server) {
+                    $server->api();
+                })
+                ->whereUserId(User::GetManagerId())->get();
+            $arr = array();
+            foreach ($options as $option) {
+                $arr[$option->id] = $option->broker_server->name;
+            }
 
-            // $form->select('broker_id')->options($options);
+            $form->select('broker_id')->options($arr)->required();
             $form->number('initial_balance')->required();
             $form->number('leverage')->required();
             $form->divider(___('rules'));
