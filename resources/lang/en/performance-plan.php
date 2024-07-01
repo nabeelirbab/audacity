@@ -8,6 +8,7 @@ return [
         'title' => 'Title',
         'initial_balance' => 'Balance',
         'leverage' => 'Leverage',
+        'broker_id' => 'Broker',
         'max_daily_loss_perc' => 'Daily Loss',
         'max_loss_perc' => 'Max Loss',
         'profit_perc' => 'Profit',
